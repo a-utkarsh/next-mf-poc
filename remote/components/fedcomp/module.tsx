@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function HostComp () {
+function RemoteComp () {
 
 	const [counter, setCounter] = useState (false);
 
@@ -10,9 +10,9 @@ function HostComp () {
 
 	return (
 		<div>
-			<button onClick = {handleCounter}> Host Counter Button: {counter}</button>
+			<button onClick = {handleCounter}> Remote Counter Button: {counter}</button>
 		</div>
 	)
 }
 
-export default HostComp
+export default RemoteComp
