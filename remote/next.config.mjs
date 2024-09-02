@@ -23,6 +23,7 @@ const nextConfig = {
     config.output.publicPath='auto'
     config.plugins.push (
       new NextFederationPlugin ({
+        shareStrategy:'loaded-first',
         name : 'remote',
         filename : `static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
         exposes : {
